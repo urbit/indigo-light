@@ -9,8 +9,8 @@ const base = {
   blue: 'rgba(0,142,255,1)',
 };
 
-
 const scales = {
+  white05: 'rgba(255,255,255,0.05)',
   white10: 'rgba(255,255,255,0.1)',
   white20: 'rgba(255,255,255,0.2)',
   white30: 'rgba(255,255,255,0.3)',
@@ -21,6 +21,7 @@ const scales = {
   white80: 'rgba(255,255,255,0.8)',
   white90: 'rgba(255,255,255,0.9)',
   white100: 'rgba(255,255,255,1)',
+  black05: 'rgba(0,0,0,0.05)',
   black10: 'rgba(0,0,0,0.1)',
   black20: 'rgba(0,0,0,0.2)',
   black30: 'rgba(0,0,0,0.3)',
@@ -31,6 +32,7 @@ const scales = {
   black80: 'rgba(0,0,0,0.8)',
   black90: 'rgba(0,0,0,0.9)',
   black100: 'rgba(0,0,0,1)',
+  red05: 'rgba(255,65,54,0.05)',
   red10: 'rgba(255,65,54,0.1)',
   red20: 'rgba(255,65,54,0.2)',
   red30: 'rgba(255,65,54,0.3)',
@@ -41,6 +43,7 @@ const scales = {
   red80: 'rgba(255,65,54,0.8)',
   red90: 'rgba(255,65,54,0.9)',
   red100: 'rgba(255,65,54,1)',
+  yellow05: 'rgba(255,199,0,0.05)',
   yellow10: 'rgba(255,199,0,0.1)',
   yellow20: 'rgba(255,199,0,0.2)',
   yellow30: 'rgba(255,199,0,0.3)',
@@ -51,6 +54,7 @@ const scales = {
   yellow80: 'rgba(255,199,0,0.8)',
   yellow90: 'rgba(255,199,0,0.9)',
   yellow100: 'rgba(255,199,0,1)',
+  green05: 'rgba(0,159,101,0.05)',
   green10: 'rgba(0,159,101,0.1)',
   green20: 'rgba(0,159,101,0.2)',
   green30: 'rgba(0,159,101,0.3)',
@@ -61,6 +65,7 @@ const scales = {
   green80: 'rgba(0,159,101,0.8)',
   green90: 'rgba(0,159,101,0.9)',
   green100: 'rgba(0,159,101,1)',
+  blue05: 'rgba(0,142,255,0.05)',
   blue10: 'rgba(0,142,255,0.1)',
   blue20: 'rgba(0,142,255,0.2)',
   blue30: 'rgba(0,142,255,0.3)',
@@ -70,8 +75,15 @@ const scales = {
   blue70: 'rgba(0,142,255,0.7)',
   blue80: 'rgba(0,142,255,0.8)',
   blue90: 'rgba(0,142,255,0.9)',
-  blue100: 'rgba(0,142,255,1)'
-}
+  blue100: 'rgba(0,142,255,1)',
+};
+
+const util = {
+  cyan: '#00FFFF',
+  magenta: '#FF00FF',
+  yellow: '#FFFF00',
+  black: '#000000',
+};
 
 const theme = {
   colors: {
@@ -80,11 +92,11 @@ const theme = {
 
     gray: scales.black60,
     lightGray: scales.black30,
-    washedGray: scales.black10,
+    washedGray: scales.black05,
 
     red: base.red,
     lightRed: scales.red30,
-    washedRed: scales.red10,
+    washedRed: scales.red05,
 
     yellow: base.yellow,
     lightYellow: scales.yellow30,
@@ -99,7 +111,9 @@ const theme = {
     washedBlue: scales.blue10,
 
     none: 'rgba(0,0,0,0)',
-    scales: scales
+
+    scales: scales,
+    util: util,
   },
   fonts: {
     sans: `"Inter", "Inter UI", -apple-system, BlinkMacSystemFont, 'San Francisco', 'Helvetica Neue', Arial, sans-serif`,
@@ -147,7 +161,6 @@ const theme = {
     2, // 1
     4, // 2
     8, // 3
-    16, // 4
   ],
   // width, height, min-width, max-width, min-height, max-height
   sizes: [

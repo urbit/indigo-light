@@ -1,16 +1,19 @@
-# indigo-tokens
-[![npm (scoped)](https://img.shields.io/npm/v/@tlon/indigo-tokens?style=plastic)](https://www.npmjs.com/package/@tlon/indigo-tokens)
-[![GitHub commit activity](https://img.shields.io/github/commit-activity/m/urbit/indigo-tokens?style=plastic)](https://www.github.com/urbit/indigo-tokens)
-[![npm bundle size](https://img.shields.io/bundlephobia/min/@tlon/indigo-tokens?style=plastic)](https://www.npmjs.com/package/@tlon/indigo-tokens)
-![NPM](https://img.shields.io/npm/l/@tlon/indigo-tokens?style=plastic)
+# indigo-light
 
-**Related**: [indigo-react](https://www.github.com/urbit/indigo-react),
-[indigo-static](https://www.github.com/urbit/indigo-static)
+[![npm (scoped)](https://img.shields.io/npm/v/@tlon/indigo-tokens?style=flat)](https://www.npmjs.com/package/@tlon/indigo-tokens)
+
+Indigo Light is a [`styled-system`](https://styled-system.com/theme-specification) compatible light theme for [Indigo React](https://www.github.com/urbit/indigo-react). This theme is also used as the main type definition for all Indigo themes.
 
 ## Quick Start
 
 ```
-npm install @tlon/indigo-tokens
+$ npm install @tlon/indigo-light
 ```
 
-`indigo-tokens` is a [`styled-components`](https://styled-system.com/theme-specification) compatible theme.
+### Related
+
+| Library      | Github                                    | NPM                                              |
+| ------------ | ----------------------------------------- | ------------------------------------------------ |
+| indigo-light | https://www.github.com/urbit/indigo-light | https://www.npmjs.com/package/@tlon/indigo-light |
+| indigo-dark  | https://www.github.com/urbit/indigo-dark  | https://www.npmjs.com/package/@tlon/indigo-dark  |
+| indigo-react | https://www.github.com/urbit/indigo-react | https://www.npmjs.com/package/@tlon/indigo-react |
