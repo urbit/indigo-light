@@ -10,6 +10,11 @@ Indigo Light is a [`styled-system`](https://styled-system.com/theme-specificatio
 $ npm install @tlon/indigo-light
 ```
 
+
+```js
+import light from '@tlon/indigo-light'
+```
+
 ### Related
 
 | Library      | Github                                    | NPM                                              |
