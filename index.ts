@@ -6,7 +6,7 @@ const base = {
   red: 'rgba(255,65,54,1)',
   yellow: 'rgba(255,199,0,1)',
   green: 'rgba(0,159,101,1)',
-  blue: 'rgba(0,142,255,1)',
+  blue: 'rgba(33,157,255,1)',
 };
 
 const scales = {
@@ -65,17 +65,17 @@ const scales = {
   green80: 'rgba(0,159,101,0.8)',
   green90: 'rgba(0,159,101,0.9)',
   green100: 'rgba(0,159,101,1)',
-  blue05: 'rgba(0,142,255,0.05)',
-  blue10: 'rgba(0,142,255,0.1)',
-  blue20: 'rgba(0,142,255,0.2)',
-  blue30: 'rgba(0,142,255,0.3)',
-  blue40: 'rgba(0,142,255,0.4)',
-  blue50: 'rgba(0,142,255,0.5)',
-  blue60: 'rgba(0,142,255,0.6)',
-  blue70: 'rgba(0,142,255,0.7)',
-  blue80: 'rgba(0,142,255,0.8)',
-  blue90: 'rgba(0,142,255,0.9)',
-  blue100: 'rgba(0,142,255,1)',
+  blue05: 'rgba(33,157,255,0.05)',
+  blue10: 'rgba(33,157,255,0.1)',
+  blue20: 'rgba(33,157,255,0.2)',
+  blue30: 'rgba(33,157,255,0.3)',
+  blue40: 'rgba(33,157,255,0.4)',
+  blue50: 'rgba(33,157,255,0.5)',
+  blue60: 'rgba(33,157,255,0.6)',
+  blue70: 'rgba(33,157,255,0.7)',
+  blue80: 'rgba(33,157,255,0.8)',
+  blue90: 'rgba(33,157,255,0.9)',
+  blue100: 'rgba(33,157,255,1)',
 };
 
 const util = {
@@ -137,9 +137,9 @@ const theme = {
   // line-height
   lineHeights: {
     min: 1.2,
-    short: 1.333333,
+    short: 1.333334,
     regular: 1.5,
-    tall: 1.666666,
+    tall: 1.666667,
   },
   // border, border-top, border-right, border-bottom, border-left
   borders: ['none', '1px solid'],
