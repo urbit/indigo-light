@@ -1,6 +1,6 @@
 # indigo-light
 
-[![npm (scoped)](https://img.shields.io/npm/v/@tlon/indigo-tokens?style=flat)](https://www.npmjs.com/package/@tlon/indigo-tokens)
+[![npm (scoped)](https://img.shields.io/npm/v/@tlon/indigo-light?style=flat)](https://www.npmjs.com/package/@tlon/indigo-light)
 
 Indigo Light is a [`styled-system`](https://styled-system.com/theme-specification) compatible light theme for [Indigo React](https://www.github.com/urbit/indigo-react). This theme is also used as the main type definition for all Indigo themes.
 
@@ -8,6 +8,11 @@ Indigo Light is a [`styled-system`](https://styled-system.com/theme-specificatio
 
 ```
 $ npm install @tlon/indigo-light
+```
+
+
+```js
+import light from '@tlon/indigo-light'
 ```
 
 ### Related
