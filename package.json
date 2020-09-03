@@ -1,18 +1,20 @@
 {
   "name": "@tlon/indigo-light",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "Light theme for Indigo React",
   "author": "tlon",
   "license": "MIT",
   "repository": "urbit/indigo-light",
-  "main": "index.ts",
-  "module": "index.ts",
+  "main": "dist/index.js",
+  "module": "dist/index.js",
   "devDependencies": {
     "@types/styled-components": "^4.4.3",
+    "esbuild": "^0.6.29",
     "husky": "^4.2.2",
     "prettier": "^2.0.5",
     "pretty-quick": "^2.0.1",
-    "styled-components": "^5.0.1"
+    "styled-components": "^5.0.1",
+    "typescript": "^4.0.2"
   },
   "husky": {
     "hooks": {
@@ -24,5 +26,16 @@
     "semi": true,
     "singleQuote": true,
     "trailingComma": "es5"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "tsc": "tsc",
+    "esbuild": "esbuild index.ts --bundle --external:styled-system --external:styled-components --outdir=dist --format=esm --splitting --sourcemap",
+    "esbuild:prod": "esbuild index.ts --bundle --external:styled-system --external:styled-components --outdir=dist --format=esm --splitting --sourcemap",
+    "clear": "rm -rf dist",
+    "reset": "rm -rf node_modules package-lock.json && npm install",
+    "build": "npm run tsc && npm run esbuild",
+    "build:prod": "npm run tsc && npm run esbuild:prod",
+    "format": "prettier --write ./src/*"
   }
 }
