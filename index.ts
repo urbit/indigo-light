@@ -10,6 +10,7 @@ const base = {
 };
 
 const scales = {
+  white04: 'rgba(255,255,255,0.04)',
   white05: 'rgba(255,255,255,0.05)',
   white10: 'rgba(255,255,255,0.1)',
   white20: 'rgba(255,255,255,0.2)',
@@ -21,6 +22,7 @@ const scales = {
   white80: 'rgba(255,255,255,0.8)',
   white90: 'rgba(255,255,255,0.9)',
   white100: 'rgba(255,255,255,1)',
+  black04: 'rgba(0,0,0,0.04)',
   black05: 'rgba(0,0,0,0.05)',
   black10: 'rgba(0,0,0,0.1)',
   black20: 'rgba(0,0,0,0.2)',
@@ -32,6 +34,7 @@ const scales = {
   black80: 'rgba(0,0,0,0.8)',
   black90: 'rgba(0,0,0,0.9)',
   black100: 'rgba(0,0,0,1)',
+  red04: 'rgba(255,65,54,0.04)',
   red05: 'rgba(255,65,54,0.05)',
   red10: 'rgba(255,65,54,0.1)',
   red20: 'rgba(255,65,54,0.2)',
@@ -43,6 +46,7 @@ const scales = {
   red80: 'rgba(255,65,54,0.8)',
   red90: 'rgba(255,65,54,0.9)',
   red100: 'rgba(255,65,54,1)',
+  yellow04: 'rgba(255,199,0,0.04)',
   yellow05: 'rgba(255,199,0,0.05)',
   yellow10: 'rgba(255,199,0,0.1)',
   yellow20: 'rgba(255,199,0,0.2)',
@@ -54,6 +58,7 @@ const scales = {
   yellow80: 'rgba(255,199,0,0.8)',
   yellow90: 'rgba(255,199,0,0.9)',
   yellow100: 'rgba(255,199,0,1)',
+  green04: 'rgba(0,159,101,0.04)',
   green05: 'rgba(0,159,101,0.05)',
   green10: 'rgba(0,159,101,0.1)',
   green20: 'rgba(0,159,101,0.2)',
@@ -65,6 +70,7 @@ const scales = {
   green80: 'rgba(0,159,101,0.8)',
   green90: 'rgba(0,159,101,0.9)',
   green100: 'rgba(0,159,101,1)',
+  blue04: 'rgba(33,157,255,0.04)',
   blue05: 'rgba(33,157,255,0.05)',
   blue10: 'rgba(33,157,255,0.1)',
   blue20: 'rgba(33,157,255,0.2)',
@@ -91,8 +97,8 @@ const theme = {
     black: base.black,
 
     gray: scales.black60,
-    lightGray: scales.black30,
-    washedGray: scales.black05,
+    lightGray: scales.black20,
+    washedGray: scales.black04,
 
     red: base.red,
     lightRed: scales.red30,
@@ -100,15 +106,15 @@ const theme = {
 
     yellow: base.yellow,
     lightYellow: scales.yellow30,
-    washedYellow: scales.yellow10,
+    washedYellow: scales.yellow05,
 
     green: base.green,
     lightGreen: scales.green30,
-    washedGreen: scales.green10,
+    washedGreen: scales.green05,
 
     blue: base.blue,
     lightBlue: scales.blue30,
-    washedBlue: scales.blue10,
+    washedBlue: scales.blue05,
 
     none: 'rgba(0,0,0,0)',
 
